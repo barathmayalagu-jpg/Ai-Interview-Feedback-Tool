@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "question": "Tell me about yourself and your experience."
+  },
+  {
+    "id": 2,
+    "question": "Describe a challenging project you worked on."
+  },
+  {
+    "id": 3,
+    "question": "How do you approach debugging production issues?"
+  }
+]

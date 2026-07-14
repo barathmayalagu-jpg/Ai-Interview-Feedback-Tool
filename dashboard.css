@@ -1,0 +1,16 @@
+.dashboard { padding: 24px; }
+.dashboard-intro { margin-bottom: 20px; }
+.dashboard-intro h1 { margin-bottom: 8px; }
+.dashboard-intro p { color: var(--muted); margin-bottom: 12px; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.value { font-size: 2rem; font-weight: 700; color: var(--primary); }
+.list { padding-left: 20px; }
+.list li { margin-bottom: 8px; }
+@media (max-width: 768px) {
+  .stats-grid { grid-template-columns: 1fr; }
+}
