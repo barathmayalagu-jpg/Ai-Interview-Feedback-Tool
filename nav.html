@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f3f4f6;
+            color: #111827;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 8%;
+            background: #0f172a;
+            color: #fff;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 18px;
+        }
+
+        .nav-links a {
+            color: #e2e8f0;
+            text-decoration: none;
+            padding: 8px 10px;
+            border-radius: 6px;
+        }
+
+        .nav-links a:hover {
+            background: #334155;
+        }
+
+        .content {
+            padding: 60px 8%;
+        }
+
+        .content h1 {
+            margin-bottom: 12px;
+            font-size: 2rem;
+        }
+
+        .content p {
+            line-height: 1.7;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">AI Feedback Hub</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nav.html">Navbar</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Navbar and Home Page Ready</h1>
+        <p>This page shows a clean navigation bar for your AI interview feedback tool.</p>
+    </div>
+</body>
+</html>

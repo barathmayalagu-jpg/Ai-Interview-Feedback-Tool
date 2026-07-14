@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - AI Interview Feedback Tool</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="brand"><img src="images/logo.svg" alt="AI Interview Feedback Tool" style="height: 40px; width: auto;"></a>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="interview.html">Mock Interview</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="#">History</a>
+      <a href="#">Profile</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+    <section class="dashboard-intro">
+      <h1>Interview practice dashboard</h1>
+      <p>Review recent sessions, prepare for your next mock interview, and track how your answers improve over time.</p>
+      <a href="interview.html" class="btn btn-primary">Start New Session</a>
+    </section>
+
+    <section class="stats-grid">
+      <article class="card">
+        <h3>Sessions Completed</h3>
+        <p class="value">3</p>
+      </article>
+      <article class="card">
+        <h3>Average Feedback Score</h3>
+        <p class="value">82%</p>
+      </article>
+      <article class="card">
+        <h3>Last Focus Area</h3>
+        <p class="value">Clarity</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Recent performance</h2>
+      <ul class="list">
+        <li>Behavioral question - Strong structure and good examples.</li>
+        <li>Technical question - Needs more concise explanations.</li>
+        <li>Self-introduction - Clear confidence and strong delivery.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

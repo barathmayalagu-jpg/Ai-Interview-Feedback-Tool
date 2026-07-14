@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback - AI Interview Feedback Tool</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/feedback.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="brand"><img src="images/logo.svg" alt="AI Interview Feedback Tool" style="height: 40px; width: auto;"></a>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="interview.html">Mock Interview</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="#">History</a>
+      <a href="#">Profile</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="feedback-container">
+    <h1>Interview Feedback Report</h1>
+    <p class="lead">Here is a simple review of your latest mock interview response.</p>
+
+    <section class="card">
+      <h2>Question</h2>
+      <p id="question-display">No question recorded yet.</p>
+    </section>
+
+    <section class="card">
+      <h2>Overall Score</h2>
+      <div id="score-display" class="score-pill">0/100</div>
+    </section>
+
+    <section class="card">
+      <h2>Your Answer</h2>
+      <p id="response-display">No response recorded yet.</p>
+    </section>
+
+    <section class="card">
+      <h2>Summary</h2>
+      <p id="summary">Your answer will be summarized here after submission.</p>
+    </section>
+
+    <section class="card">
+      <h2>Suggested Improvements</h2>
+      <ul id="suggestions"></ul>
+    </section>
+
+    <div class="actions">
+      <a href="interview.html" class="btn btn-primary">Try Another Question</a>
+      <a href="dashboard.html" class="btn btn-secondary">Go to Dashboard</a>
+    </div>
+  </main>
+
+  <script src="js/feedback.js"></script>
+</body>
+</html>

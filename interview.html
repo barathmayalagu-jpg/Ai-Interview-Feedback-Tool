@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interview Session - AI Interview Feedback Tool</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/interview.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="brand"><img src="images/logo.svg" alt="AI Interview Feedback Tool" style="height: 40px; width: auto;"></a>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="interview.html">Mock Interview</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="#">History</a>
+      <a href="#">Profile</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="interview-shell">
+    <section class="panel">
+      <p class="eyebrow">Mock Interview</p>
+      <h1>Practice with a real interview prompt</h1>
+      <p class="lead">Answer the question below and submit your response to receive simple feedback.</p>
+
+      <div class="prompt-box">
+        <h2>Question</h2>
+        <p id="question">Tell me about a project where you solved a complex problem and explain the results.</p>
+      </div>
+
+      <div class="controls">
+        <button id="start-btn" class="btn btn-primary">Start Recording</button>
+        <button id="reset-btn" class="btn btn-secondary">Reset</button>
+      </div>
+
+      <label for="response">Your answer</label>
+      <textarea id="response" rows="8" placeholder="Type your answer here or speak and it will appear." disabled></textarea>
+      <button id="submit-btn" class="btn btn-primary" disabled>Submit Answer</button>
+      <p id="status" class="status">Click start to begin your mock interview.</p>
+    </section>
+
+    <aside class="panel">
+      <h2>How this interview works</h2>
+      <ul class="tips">
+        <li>Start the session and answer the prompt clearly.</li>
+        <li>Use a short structure: situation, actions, outcome.</li>
+        <li>Submit your answer to view feedback instantly.</li>
+      </ul>
+      <div id="transcript" class="transcript-box">The tool will capture your response and create feedback after submission.</div>
+    </aside>
+  </main>
+
+  <script src="js/interview.js"></script>
+</body>
+</html>
